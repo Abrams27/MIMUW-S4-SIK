@@ -87,7 +87,7 @@ int main(int argc, char *argv[]) {
 
   for (uint64_t buf = 0; buf < f_size; buf += BUFFER_SIZE) {
     memset(line, 0, BUFFER_SIZE);
-    fgets(line, BUFFER_SIZE, file);
+    fread(line, 1, BUFFER_SIZE, file);
 
     write_wrapper(sock, line, strlen(line), "writing on stream socket");
   }
