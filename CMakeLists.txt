@@ -15,3 +15,6 @@ add_executable(nk-server-tcp zadanko5/nk-server-tcp.c)
 # zadanko 6
 add_executable(file-client-tcp zadanko6/file-client-tcp.c)
 add_executable(file-server-tcp zadanko6/file-server-tcp.c)
+
+# zadanko 7
+add_executable(poll-server-telnet zadanko7/poll-server-telnet.c)
