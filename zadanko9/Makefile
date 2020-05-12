@@ -1,4 +1,4 @@
-EXECS = rawping spoofping
+EXECS = myping spoofping
 
 CPPFLAGS = -Wall
 LDFLAGS	= 
@@ -6,9 +6,9 @@ LDLIBS =
 
 TARGET: $(EXECS)
 
-rawping.o err.o dropnobody.o spoofping.o: err.h
+myping.o err.o dropnobody.o spoofping.o: err.h
 
-rawping: rawping.o err.o in_cksum.o dropnobody.o
+myping: myping.o err.o in_cksum.o dropnobody.o
 
 spoofping: spoofping.o err.o in_cksum.o dropnobody.o
 

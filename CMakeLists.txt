@@ -18,3 +18,6 @@ add_executable(file-server-tcp zadanko6/file-server-tcp.c)
 
 # zadanko 7
 add_executable(poll-server-telnet zadanko7/poll-server-telnet.c)
+
+# zadanko 9
+add_executable(myping zadanko9/myping.c)
